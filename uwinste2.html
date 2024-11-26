@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #fafafa;
+            box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            padding: 15px 20px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #333;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .sidebar ul li a.active {
+            color: #0078D7;
+            background-color: #eaf4ff;
+            border-left: 4px solid #0078D7;
+        }
+
+        .sidebar ul li a:hover {
+            color: #0078D7;
+        }
+
+        /* Content Styling */
+        .content {
+            margin-left: 260px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+
+        table th,
+        table td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+
+        table th {
+            background-color: #f9f9f9;
+        }
+
+        .status {
+            font-weight: bold;
+        }
+
+        .status.in-progress {
+            color: orange;
+        }
+
+        .status.taken {
+            color: green;
+        }
+
+        .status.in-cart {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+   
+<img src="pic%202.png" alt="Trulli" width="1590" height="333">
+    <ul>
+
+
+            </ul>
+    
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="#" class="active">Course History</a></li>
+            <li><a href="error.html">View Official Transcript</a></li>
+            <li><a href="error.html">Request Official Transcript</a></li>
+        </ul>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <!-- Course History Section -->
+        <h1>Course History</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Class</th>
+                    <th>Description</th>
+                    <th>Term</th>
+                    <th>Grade</th>
+                    <th>Grade points</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Add courses from image -->
+                <tr>
+                    <td>COMP 2087</td>
+                    <td>Programming for Beginners II</td>
+                    <td>Winter 2025</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td class="status in-cart">In Cart</td>
+                </tr>
+                <tr>
+                    <td>COMP 2650</td>
+                    <td>Comp Architre I:Digital Design</td>
+                    <td>Winter 2025</td>
+                    <td>76</td>
+                    <td>228.000</td>
+                    <td class="status taken">Taken</td>
+                </tr>
+                                <tr>
+                    <td>COMP 2097</td>
+                    <td>Soc Media & Mobile Tech-End User</td>
+                    <td>Winter 2025</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td class="status in-cart">In Cart</td>
+                </tr>
+                
+                                <tr>
+                    <td>COMP 2067</td>
+                    <td>Programming for Beginners I</td>
+                    <td>Winter 2025</td>
+                    <td>81</td>
+                    <td>243.000</td>
+                    <td class="status taken">Taken</td>
+                </tr>
+                
+                <tr>
+                    <td>COMP 2070</td>
+                    <td>Advanced Website Design</td>
+                    <td>Winter 2025</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td class="status in-cart">In Cart</td>
+                </tr>
+                
+                                <tr>
+                    <td>ESCI 1000</td>
+                    <td>Natural Hazard and Disasters</td>
+                    <td>Winter 2025</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td class="status in-cart">In Cart</td>
+                </tr>
+                
+                                <tr>
+                    <td>STEN 1000</td>
+                    <td>Introduction To Business</td>
+                    <td>Winter 2025</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td class="status in-cart">In Cart</td>
+                </tr>
+                
+
+                
+                <tr>
+                    <td>COMP 1047</td>
+                    <td>Computer Concepts - End-Users</td>
+                    <td>Winter 2024</td>
+                    <td>80</td>
+                    <td>240.000</td>
+                    <td class="status taken">Taken</td>
+                </tr>
+                                <tr>
+                    <td>COMP 1400</td>
+                    <td>Intro: Algorithms & Prog I</td>
+                    <td>Winter 2024</td>
+                    <td>79</td>
+                    <td>237.000</td>
+                    <td class="status taken">Taken</td>
+                </tr>
+                
+                <tr>
+                    <td>COMP 1410</td>
+                    <td>Intro: Algorithms & Prog II</td>
+                    <td>Winter 2024</td>
+                    <td>82</td>
+                    <td>246.000</td>
+                    <td class="status taken">Taken</td>
+                </tr>
+                <tr>
+                    <td>MATH 1260</td>
+                    <td>Vectors and Linear Algebra</td>
+                    <td>Fall 2024</td>
+                    <td>82</td>
+                    <td>246.000</td>
+                    <td class="status taken">Taken</td>
+                </tr>
+                <tr>
+                    <td>MATH 1760</td>
+                    <td>Differential Calculus</td>
+                    <td>Fall 2023</td>
+                    <td>76</td>
+                    <td>228.000</td>
+                    <td class="status taken">Taken</td>
+                </tr>
+                
+                                <tr>
+                    <td>COMP 1000</td>
+                    <td>Key Concepts in Comnputer Scien</td>
+                    <td>Winter 2024</td>
+                    <td>61</td>
+                    <td>183.000</td>
+                    <td class="status taken">Taken</td>
+                </tr>
+                
+                                               <tr>
+                    <td>ECONS 1100</td>
+                    <td>Introduction to Economics I</td>
+                    <td>Winter 2024</td>
+                    <td>77</td>
+                    <td>231.000</td>
+                    <td class="status taken">Taken</td>
+                </tr>
+                
+                
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
